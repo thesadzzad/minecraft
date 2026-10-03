@@ -1,0 +1,25 @@
+# ========================================================
+# Minecraft Server Git Ignore
+# Whitelists ONLY script files (.bat, .ps1) and documentation
+# ========================================================
+
+# 1. Ignore everything by default (world, mods, logs, jars, configs)
+*
+
+# 2. Allow Git configuration and documentation
+!.gitignore
+!README.md
+!LICENSE
+
+# 3. Whitelist all Batch and PowerShell scripts
+!*.bat
+!*.cmd
+!*.ps1
+!*.sh
+
+# 4. Explicit security safeguard (never track credentials or secrets)
+playit.toml
+rclone.conf
+*.secret
+*.token
+credentials.json
